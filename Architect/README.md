@@ -3,7 +3,7 @@
 ![home](Screenshots/Home.png)
 
 ### Profile
-![profile](Screenshots/Architect_Profile.png)
+![profile](Screenshots/Profile.png)
 
 ### Footer Page
 ![footer](Screenshots/Footer.png)
