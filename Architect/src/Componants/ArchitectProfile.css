@@ -1,0 +1,91 @@
+/* Architect-profiles */
+.architect-profiles {
+  background-color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.architect-profiles h3 {
+  font-size: 2rem;
+  color: #002060;
+  margin-bottom: 2.5rem;
+}
+
+.profiles-slider {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* wrap all profile when 'view all' is clicked */
+  overflow: hidden;
+  width: 100%;
+}
+
+.profile {
+  background-color: #f4f4f4;
+  padding: 4rem;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.profile p:last-child {
+  color: #ff9800;
+  font-size: 1.2rem;
+}
+
+.slider-controls {
+  margin-top: 1rem;
+}
+
+.slider-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  height: 40px;
+  width: 80px;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.view-all-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #002060;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #0046a1;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    width: 100%;
+  }
+
+  .profiles-slider {
+    flex-wrap: wrap;
+  }
+}

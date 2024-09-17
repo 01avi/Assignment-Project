@@ -1,0 +1,54 @@
+/* Newsletter Section */
+.newsletter {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*Eww7pEGuh5F3K8fm");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  padding: 0.75rem;
+  width: 350px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.newsletter-form button {
+  height: 50px;
+  border: 1px solid white;
+  margin: 10 px;
+  padding: 0.75rem 1.5rem;
+  background-color: #002060;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.newsletter-form button:hover {
+  background-color: #00143b;
+}

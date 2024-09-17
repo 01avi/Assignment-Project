@@ -1,0 +1,79 @@
+/* Feedback Form */
+.feed {
+  background-image: url("https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/629a30c55cc6c7d921bf0f2d_6296062b1343b06a84c13d18_4-website-optimization-strategies-that-will-help-attract-new-users%20(1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback-form {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+.feedback-form h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.feedback-form input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.feedback-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: #888;
+}
+
+.feedback-form button {
+  background-color: #002060;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #16275f;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 2px solid #4c5e9b;
+}
+
+@media (max-width: 600px) {
+  .feedback-form {
+    width: 90%;
+    padding: 15px;
+  }
+}
