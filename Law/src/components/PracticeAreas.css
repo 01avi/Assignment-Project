@@ -1,0 +1,118 @@
+/* General Styling */
+.practice-areas {
+  position: relative;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.practice-areas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://images.shiksha.com/mediadata/images/articles/1439528573phphjmMg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 1; /* Place it behind the content */
+}
+
+.practice-areas h2 {
+  position: relative;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+  z-index: 2; /* Ensure text is above the background */
+}
+
+/* Grid Layout */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0;
+  margin: 0 auto;
+  width: 60%;
+  height: 70vh;
+}
+
+/* Button Styling */
+.area-card {
+  position: relative; /* Ensure it can be layered correctly */
+  background-color: transparent;
+  padding: 30px;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2; /* Ensure it is above the background */
+}
+
+.area-card.even {
+  background-color: #f0f0f0;
+}
+
+.area-card.odd {
+  background-color: transparent;
+}
+
+.area-card.active {
+  background-color: white;
+}
+
+.area-card:hover {
+  transform: scale(1.05);
+  border: 4px solid rgb(255, 136, 0);
+  background-color: rgb(255, 136, 0);
+  border-radius: 10px;
+  z-index: 3; /* Bring to the front on hover */
+}
+
+/* Icon and Text */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* View All Button */
+.view-all-btn {
+  position: relative; /* Ensure it can be layered correctly */
+  z-index: 2; /* Place it above other elements */
+  margin-top: 40px;
+  padding: 10px 30px;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-all-btn:hover {
+  background-color: rgb(255, 136, 0);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .area-grid {
+    margin: 40px;
+    width: 30%;
+    height: 35vh;
+  }
+  .view-all-btn {
+    position: relative; /* Ensure it can be layered correctly */
+    z-index: 2; /* Place it above other elements */
+    margin-top: 200px;
+    background-color: rgb(255, 136, 0);
+  }
+}

@@ -1,0 +1,155 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative; /* Keep it at the top */
+  z-index: 10; /* Ensure it stays above the navbar */
+}
+
+.logo img {
+  width: 800px;
+  margin-left: 20%;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack the text and phone number vertically */
+  align-items: center;
+  gap: 10px;
+  margin-left: 45%;
+}
+
+.consult-text {
+  font-weight: bold;
+  color: #f78f1e;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.btn-consult {
+  background-color: #f78f1e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-consult:hover {
+  background-color: #d97616;
+}
+
+/* Navigation bar section with links on black background */
+.navbar {
+  background-color: #222;
+  padding: 10px 0;
+  position: relative; /* Positioned relative to the top-bar */
+  z-index: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-links li {
+  text-transform: uppercase;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #f78f1e;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    width: 200px;
+    margin-left: 10%;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .btn-consult {
+    margin-right: 10%;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 180px; /* Smaller logo for mobile */
+    margin-left: 0;
+  }
+
+  .contact-info {
+    width: 60%;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .btn-consult {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+    margin-right: 2%;
+  }
+  .phone-number {
+    font-size: 15px;
+  }
+  .consult-text {
+    font-size: 15px;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 150px;
+    margin-left: 0%;
+  }
+
+  .contact-info {
+    gap: 3px;
+  }
+
+  .btn-consult {
+    width: 80px;
+    padding: 3px 5px;
+    font-size: 0.6rem;
+    margin-right: 1%;
+  }
+  .phone-number {
+    font-size: 10px;
+  }
+  .consult-text {
+    font-size: 10px;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+  }
+}

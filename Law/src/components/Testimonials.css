@@ -1,0 +1,148 @@
+.testimonials {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.testimonials h2:before,
+.testimonials h2:after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #f78f1e;
+  position: absolute;
+  top: 50%;
+}
+
+.testimonials h2:before {
+  left: -120px;
+}
+
+.testimonials h2:after {
+  right: -120px;
+}
+
+/* Testimonial Carousel Styling */
+.testimonial-carousel {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Adjust spacing */
+  border-left: 3px solid #f78f1e;
+  border-right: 3px solid #f78f1e;
+  position: relative;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0 40px;
+  color: #555;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+cite {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Navigation Arrows */
+.arrow {
+  font-size: 2.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  left: -850px; /* Adjust based on your preference */
+}
+
+.arrow-right {
+  right: 0px; /* Adjust based on your preference */
+}
+
+.arrow:hover {
+  color: #f78f1e;
+}
+
+/* All Testimonials Layout */
+.all-testimonials {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-item {
+  margin-bottom: 40px;
+  border-top: 2px solid #f78f1e;
+  border-bottom: 2px solid #f78f1e;
+  padding: 20px;
+}
+
+.testimonial-item blockquote {
+  padding: 0;
+}
+
+/* Button Styling */
+.btn-testimonials {
+  background-color: #f78f1e;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-testimonials:hover {
+  background-color: #ffb300;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .testimonial-carousel {
+    padding: 20px;
+  }
+
+  .arrow {
+    font-size: 1.8rem;
+  }
+
+  .testimonials h2:before,
+  .testimonials h2:after {
+    width: 50px;
+    left: -70px;
+    right: -70px;
+  }
+
+  .arrow-left {
+    left: -20px;
+  }
+
+  .arrow-right {
+    right: -20px;
+  }
+}

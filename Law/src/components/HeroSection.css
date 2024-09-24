@@ -1,0 +1,33 @@
+.hero-section {
+  background-image: url("https://t4.ftcdn.net/jpg/06/33/37/97/360_F_633379782_r7HP74o8Hf9lKZ70WqBkEWpsh7tegNh0.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1 {
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 1050px;
+}
+.hero-section h1 span {
+  color: #f78f1e;
+}
