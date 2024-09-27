@@ -1,0 +1,86 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background-image: url("https://www.swipedon.com/hubfs/6%20Reasons%20Why%20Visitor%20Management%20Systems%20Are%20Essential%20On%20Construction%20Sites.jpeg"); /* Your background image path */
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-overlay h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 0 20px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: rgb(11, 7, 241);
+  z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  .scroll-indicator {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 50vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 16px;
+  }
+
+  .scroll-indicator {
+    font-size: 16px;
+  }
+}

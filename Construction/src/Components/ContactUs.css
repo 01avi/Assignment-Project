@@ -1,0 +1,172 @@
+/* Container for the contact section with split screen */
+.contact-us-container {
+  display: flex;
+  height: 60vh;
+  background: url("https://miro.medium.com/v2/resize:fit:3200/1*TfIqQpwfXov287CCqjhetg.jpeg")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+/* Overlay on the right side (transparent sky blue) */
+.contact-us-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    135,
+    206,
+    250,
+    0.548
+  ); /* Skyblue overlay with opacity */
+  z-index: 1;
+}
+
+/* Contact info section - left side */
+.contact-info {
+  margin-left: 200px;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.8); /* Black opacity */
+  padding: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2; /* Ensure it's above the background */
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-person h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.contact-person p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Contact form section - right side */
+.contact-form {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  position: relative; /* Ensure it's above the overlay */
+}
+
+.contact-form h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  width: 60%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-info {
+    margin-left: 50px; /* Reduce margin on tablets */
+    padding: 40px; /* Adjust padding */
+  }
+
+  .contact-form {
+    padding: 40px; /* Adjust padding on the form side */
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 80%; /* Increase form elements width for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column; /* Stack contact info and form vertically */
+    height: auto; /* Adjust height */
+  }
+
+  .contact-us-container::after {
+    left: 0; /* Disable overlay split on mobile */
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    width: 100%;
+    padding: 30px; /* Adjust padding */
+    justify-content: center;
+  }
+
+  .contact-form {
+    padding: 30px; /* Adjust padding */
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 24px; /* Smaller headings for mobile */
+  }
+
+  .contact-person h3 {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px; /* Reduce input padding */
+  }
+
+  .contact-form button {
+    padding: 10px; /* Reduce button padding */
+    font-size: 14px; /* Adjust button text size */
+  }
+}

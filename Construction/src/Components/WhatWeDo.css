@@ -1,0 +1,108 @@
+.what-we-do {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.heading {
+  color: #333;
+  font-size: 30px; /* Slightly larger font size */
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  bottom: -3px;
+  width: 60%;
+  height: 2px;
+  background-color: #007bff; /* Blue underline */
+}
+
+.what-we-do-items {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.what-we-do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-do-item img.icon {
+  width: 80px; /* Adjust based on the actual icon size */
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.what-we-do-item p {
+  color: #333;
+  font-size: 20px; /* Slightly larger text for the items */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .what-we-do-items {
+    gap: 100px; /* Reduce gap on tablets */
+  }
+
+  .what-we-do-item img.icon {
+    width: 70px; /* Scale down icons */
+    height: 70px;
+  }
+
+  .what-we-do-item p {
+    font-size: 18px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .what-we-do-items {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 50px; /* Smaller gap on mobile */
+  }
+
+  .heading {
+    font-size: 26px; /* Reduce heading size on smaller screens */
+  }
+
+  .what-we-do-item img.icon {
+    width: 60px; /* Smaller icons for mobile */
+    height: 60px;
+  }
+
+  .what-we-do-item p {
+    font-size: 16px; /* Adjust text size for mobile */
+  }
+
+  .underline::after {
+    left: 20px; /* Adjust underline position for mobile */
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-we-do-items {
+    gap: 30px; /* Further reduce gap for very small screens */
+  }
+
+  .heading {
+    font-size: 24px; /* Smaller heading for extra-small screens */
+  }
+
+  .what-we-do-item img.icon {
+    width: 50px; /* Smaller icons for very small screens */
+    height: 50px;
+  }
+
+  .what-we-do-item p {
+    font-size: 14px; /* Smaller text for very small screens */
+  }
+}

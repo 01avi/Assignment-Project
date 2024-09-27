@@ -1,0 +1,165 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: white;
+  height: 100px;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Stick it to the top */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Ensure content starts below the navbar */
+body {
+  padding-top: 100px; /* Offset for fixed navbar height */
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.logo-image {
+  margin-top: 5px;
+  height: 100px;
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu li {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+.quote-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  height: 50px;
+  width: 15%;
+  font-weight: 800;
+}
+
+.quote-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    display: none;
+    z-index: 1;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu li {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .quote-button {
+    width: 90%;
+    margin: 20px 0;
+    height: auto;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .logo-image {
+    height: 80px;
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-image {
+    height: 80px;
+    margin-left: -60px;
+  }
+
+  .quote-button {
+    font-size: 12px;
+  }
+
+  .menu ul {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 40px;
+  }
+}

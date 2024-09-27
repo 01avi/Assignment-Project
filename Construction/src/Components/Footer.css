@@ -1,0 +1,73 @@
+/* General footer container */
+.footer {
+  background-color: #000; /* Black background */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer content container */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Copyright text */
+.copyright {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Social media icons container */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Style for each social icon */
+.social-icons .icon {
+  color: #fff; /* White icons */
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for icons */
+.social-icons .icon:hover {
+  color: #007bff; /* Change to blue on hover */
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items on smaller screens */
+    text-align: center;
+  }
+
+  .copyright {
+    margin-bottom: 15px; /* Add spacing between text and social icons */
+  }
+
+  .social-icons {
+    gap: 10px; /* Reduce gap between icons for better fit */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .copyright {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .social-icons .icon {
+    font-size: 18px; /* Reduce icon size on mobile */
+  }
+}
