@@ -1,8 +1,18 @@
-# React + Vite
+## Screenshots from the application:
+### Home Page
+![Home](Screenshots/Home.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Home Page in Mobile
+![Home](Screenshots/ResponsiveDesign.png)
 
-Currently, two official plugins are available:
+### About Us
+![About](Screenshots/AboutUs.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Projects
+![footer](Screenshots/Projects.png)
+
+### Contact
+![Contact](Screenshots/Contact.png)
+
+
+
