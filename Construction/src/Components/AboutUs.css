@@ -38,7 +38,7 @@
   height: 500px;
   border: 2px solid #007bff;
   box-shadow: 25px 10px 20px rgba(0, 0, 0, 0.562); /* 3D shadow effect */
-  transition: transform 0.3s ease; /* Adds smooth hover effect */
+  transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
