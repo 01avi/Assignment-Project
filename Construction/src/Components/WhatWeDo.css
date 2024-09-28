@@ -37,14 +37,14 @@
 }
 
 .what-we-do-item img.icon {
-  width: 80px; /* Adjust based on the actual icon size */
+  width: 80px;
   height: 80px;
   margin-bottom: 10px;
 }
 
 .what-we-do-item p {
   color: #333;
-  font-size: 20px; /* Slightly larger text for the items */
+  font-size: 20px;
 }
 
 /* Responsive Design */
@@ -59,27 +59,27 @@
   }
 
   .what-we-do-item p {
-    font-size: 18px; /* Adjust text size */
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .what-we-do-items {
-    flex-direction: column; /* Stack items vertically on mobile */
-    gap: 50px; /* Smaller gap on mobile */
+    flex-direction: column;
+    gap: 50px;
   }
 
   .heading {
-    font-size: 26px; /* Reduce heading size on smaller screens */
+    font-size: 26px;
   }
 
   .what-we-do-item img.icon {
-    width: 60px; /* Smaller icons for mobile */
+    width: 60px;
     height: 60px;
   }
 
   .what-we-do-item p {
-    font-size: 16px; /* Adjust text size for mobile */
+    font-size: 16px;
   }
 
   .underline::after {
@@ -90,19 +90,19 @@
 
 @media (max-width: 480px) {
   .what-we-do-items {
-    gap: 30px; /* Further reduce gap for very small screens */
+    gap: 30px;
   }
 
   .heading {
-    font-size: 24px; /* Smaller heading for extra-small screens */
+    font-size: 24px;
   }
 
   .what-we-do-item img.icon {
-    width: 50px; /* Smaller icons for very small screens */
+    width: 50px;
     height: 50px;
   }
 
   .what-we-do-item p {
-    font-size: 14px; /* Smaller text for very small screens */
+    font-size: 14px;
   }
 }

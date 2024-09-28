@@ -13,7 +13,7 @@
   text-align: center;
 }
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 100%;
   position: absolute;
